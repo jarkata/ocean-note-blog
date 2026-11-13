@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="scroll-smooth">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Ocean博客</title>
     <meta name="description" content="博客,进销存"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Ocean博客"/>
+    <meta property="og:description" content="博客,进销存"/>
     <link rel="stylesheet" href="assets/style.css"/>
 </head>
-<body>
-<header class="site-header">
-    <div class="container">
-        <a class="site-title" href="./">Ocean博客</a>
-        <p class="site-description">博客,进销存</p>
+<body class="min-h-screen bg-slate-50 font-sans text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+<header class="border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800/80 dark:bg-slate-950/80">
+    <div class="mx-auto flex max-w-5xl flex-col gap-5 px-6 py-12 sm:flex-row sm:items-end sm:justify-between">
+        <div class="min-w-0">
+            <a href="./" class="text-3xl font-bold tracking-tight text-slate-900 transition hover:text-blue-600 dark:text-slate-100 dark:hover:text-blue-400">Ocean博客</a>
+            <p class="mt-3 max-w-2xl text-sm leading-6 text-slate-500 dark:text-slate-400">博客,进销存</p>
+
+        </div>
+        <p class="shrink-0 text-xs font-medium uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">1 篇文章</p>
     </div>
 </header>
-<main class="container">
-    <ul class="post-list">
-        <li class="post-item">
-    <a class="post-title" href="posts/jxc202611052056-3792eee6/">JX不忘初心</a>
-    <p class="post-meta">2026-11-08</p>
-    <p class="post-summary">不忘初心</p>
-</li>
+<main class="mx-auto max-w-5xl px-6 py-10">
+    <nav aria-label="文章分类" class="mb-8 flex flex-wrap items-center gap-2">
+        <a href="./" class="inline-flex items-center gap-1.5 rounded-full border border-slate-900 bg-slate-900 px-3 py-1.5 text-xs font-medium text-white shadow-sm transition dark:border-slate-100 dark:bg-slate-100 dark:text-slate-900" aria-current="page">全部<span class="text-[11px] tabular-nums text-white/70 dark:text-slate-700">1</span></a>
 
-    </ul>
+    </nav>
+    <div class="grid gap-6 sm:grid-cols-2">
+        <article class="group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700">
+    <div class="flex items-center gap-3 text-xs">
+        
+        <time class="ml-auto shrink-0 tabular-nums text-slate-400 dark:text-slate-500">2026-11-08</time>
+    </div>
+    <h2 class="mt-4 text-lg font-semibold leading-snug tracking-tight text-slate-900 dark:text-slate-100">
+        <a href="posts/jxc202611052056-3792eee6/" class="transition group-hover:text-blue-600 dark:group-hover:text-blue-400">JX不忘初心</a>
+    </h2>
+    <p class="mt-3 line-clamp-3 flex-1 text-sm leading-6 text-slate-500 dark:text-slate-400">不忘初心</p>
+    <a href="posts/jxc202611052056-3792eee6/" class="mt-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600 transition group-hover:gap-2 dark:text-blue-400">
+        阅读全文 <span aria-hidden="true">→</span>
+    </a>
+</article>
+
+    </div>
 </main>
-<footer class="site-footer">
-    <div class="container">由 OceanNote 发布</div>
+<footer class="border-t border-slate-200/70 py-8 dark:border-slate-800/80">
+    <div class="mx-auto max-w-5xl px-6 text-xs text-slate-400 dark:text-slate-500">由 OceanNote 发布</div>
 </footer>
 </body>
 </html>
